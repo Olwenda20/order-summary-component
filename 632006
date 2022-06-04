@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>order-summary-preview</title>
+  
+  <!--+++++++ CSS ++++++-->
+  <link rel="stylesheet" href="css/main.css">
+  
+</head>
+
+<!--======== BODY ========-->
+<body>
+  
+  <!-- CONTAINER - -->
+  <div class="container" role="main">
+    
+    <!--==== header image ===== -->
+    <div class="header_img">
+      <img src="images/illustration-hero.svg" alt="">
+    </div>
+    
+    <!--==== Content area ===== -->
+    <div class="content">
+      
+      <!--==== Paragraph ===== -->
+      <div class="paragraph">
+        <h1>Order Summary</h1>
+        
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      </div>
+      
+      <!--==== subscription ===== -->
+      <div class="subscription">
+        
+        <div class="pricing">
+          
+          <div class="icon">
+            <img src="images/icon-music.svg" alt="music-icon">
+          </div>
+          
+          <div>
+            <h3>Annual plan</h3>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        
+        <a href="#">change</a>
+      </div>
+      
+      <!--====== Payment =====-->
+      <div class="btn">
+        <button>Proceed to Payment</button>
+        
+        <p>Cancel Order </p>
+      
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>

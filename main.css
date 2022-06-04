@@ -1,0 +1,172 @@
+
+
+/*======= VARIABLES =========*/
+
+:root{
+  
+  /*===== font color =====*/
+  --pale-blue:hsl(225, 100%, 94%);
+  --bright-blue:hsl(245, 75%, 52%);
+  --very-pale:hsl(225, 100%, 98%);
+  
+  --desaturated:hsl(224, 23%, 55%);
+  --neutral:hsl(0, 0%, 100%);
+  --dark-blue:hsl(223, 47%, 23%);
+  
+  /*===== font-size =====*/
+  --body-font:16px;
+  --h1-font:1.5rem;
+  --span-font:0.85rem;
+  
+  /*===== Font Family=====*/
+  --family:;
+  
+  /* ===== FONT WEIGHT =====*/
+  --bolder:900;
+  --bold:700;
+  --light:500;
+  
+} 
+
+/* ====== BASE/GENERAL========*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline:none;
+}
+
+/*+++++++ Body ++++++++*/
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background:var(--pale-blue) url('../images/pattern-background-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*+++++++++ Images +++++++++*/
+img{
+  width: 100%;
+  height:auto;
+  object-fit: cover;
+  border-radius:0.5rem 0.5rem 0 0;
+}
+
+/* ========== MAIN ========== */
+
+/*==== Container ===== */
+.container{
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  
+  background: var(--neutral);
+}
+
+  /*-+-+-+- content area +-+-+-+-*/
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* +++++++ Paragraph +++++++ */
+.paragraph{
+  text-align: center;
+}
+
+.paragraph h1{
+  font-size: var(--h1-font);
+  font-weight: var(--bolder);
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+p{
+  font-size: var(--body-font);
+  color: var(--desaturated);
+  line-height: 1.5rem;
+}
+
+
+/*++++++ subscription +++++++*/
+.subscription{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  
+  background: var(--very-pale);
+}
+
+.pricing{
+  display: flex;
+  align-items: center;
+}
+
+.pricing .icon{
+  width: 3rem;
+  margin-right: 1.5rem;
+}
+
+.pricing h3{
+  font-size: 0.95rem;
+  font-weight: var(--bold);
+  color: var(--dark-blue);
+}
+
+/* ++++++++ Payment button ++++++*/
+.btn{
+  text-align: center;
+}
+
+button{
+  text-align: center;
+  font-weight: var(--bold);
+  width: 100%;
+  background: var(--bright-blue);
+  color: var(--neutral);
+  padding: 18px 32px;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 15px hsl(245, 30%, 52%);
+}
+
+.btn p{
+  font-weight: var(--bold);
+}
+
+
+/*========= RESPONSIVENESS ========*/
+@media (max-width: 375px){
+  /*====== BODY =====*/
+  body{
+    background: var(--pale-blue) url('../images/pattern-background-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25rem 1.5rem;
+  }
+  
+  p{
+    font-size: 16px;
+  }
+  
+  .pricing .icon{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+}
