@@ -46,7 +46,7 @@ body{
   justify-content: center;
   align-items: center;
  
-  background:var(--pale-blue) url('../images/pattern-background-desktop.svg');
+  background:var(--pale-blue) url('pattern-background-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
